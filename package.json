@@ -1,0 +1,72 @@
+{
+  "name": "high-concurrent-registration-system",
+  "version": "1.0.0",
+  "description": "A high-concurrent registration system based on Nginx and Node.js",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "mocha --recursive",
+    "lint": "eslint .",
+    "build": "babel src -d dist",
+    "prestart": "npm run build",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "high-concurrent",
+    "registration",
+    "system",
+    "nginx",
+    "node.js",
+    "express",
+    "mysql",
+    "redis",
+    "kafka"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/high-concurrent-registration-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/high-concurrent-registration-system/issues"
+  },
+  "homepage": "https://github.com/yourusername/high-concurrent-registration-system",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "kafka-node": "^4.1.3",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.1",
+    "mysql": "^2.18.1",
+    "redis": "^3.1.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.3.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.7"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "no-console": "off",
+      "no-unused-vars": "warn"
+    }
+  }
+}

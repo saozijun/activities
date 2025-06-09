@@ -1,0 +1,16 @@
+.ant-pro-basicLayout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+}
+.ant-pro-basicLayout .ant-layout {
+  background: #f0f2f5;
+}
+.ant-pro-basicLayout-content {
+  margin: 24px;
+  display: flex;
+}
+[data-theme='dark'] .ant-layout {
+  background: #2a2c2c;
+}
